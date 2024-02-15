@@ -1,0 +1,25 @@
+{
+  "name": "numberman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/global/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "dev": "sh dev.sh",
+    "build": "tsc --project tsconfig.node.json && tsc --project tsconfig.global.json "
+  },
+  "author": "soso tsertsvadze",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/global/index.js",
+      "require": "./dist/common/index.js"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2"
+  }
+}

@@ -1,0 +1,7 @@
+/*
+!dist/.*
+!package-lock.json
+!package.json
+!tsconfig.base.json
+!tsconfig.node.json
+!tsconfig.web.json

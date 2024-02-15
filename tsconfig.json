@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "esModuleInterop": true
+    // "declarationDir": "./dist/node",
+    // "outDir":"./dist/node",
+    // "module": "CommonJS"
+  }
+}
