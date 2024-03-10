@@ -1,5 +1,22 @@
 ### CipherNum
 
+[![Standard JS][standard-js-src]][standard-js-href]
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+
+<!-- Refs -->
+[standard-js-src]: https://img.shields.io/badge/license-MIT-brightgreen?&style=flat-square
+[standard-js-href]: https://github.com/Generalsimus/CipherNum/blob/master/LICENSE
+
+[npm-version-src]: https://img.shields.io/npm/v/ciphernum?&style=flat-square
+[npm-version-href]: https://www.npmjs.com/package/ciphernum
+
+[npm-downloads-src]: https://img.shields.io/npm/dt/ciphernum?&style=flat-square
+[npm-downloads-href]: https://www.npmjs.com/package/ciphernum
+
+[bundle-phobia-src]: https://img.shields.io/bundlephobia/min/ciphernum?&style=flat-square&color=red
+[bundle-phobia-href]: https://packagephobia.com/result?p=ciphernum
+
 ## Usage
 The CipherNum npm package offers a unique solution for converting numbers into a string of characters and accurately recovering the original numbers from these character strings. This conversion process works seamlessly with both standard numbers and BigInts, compact data representation, or any scenario where numbers need to be converted to a non-standard string format for storage, transmission, or processing, and then precisely recovered.
 
