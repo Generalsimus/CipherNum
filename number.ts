@@ -11,6 +11,18 @@ export interface EnCodeDecodeNumber {
     encode: (decodeNumber: number) => string;
     decode: (encodeString: string) => number;
 }
+const factorial = (n: bigint): bigint => {
+    let result = 1n;
+    for (let i = 1n; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+};
+
+const permutationsBigint = (n: bigint, r: bigint) =>
+    factorial(n) / factorial(n - r);
+const permutationsNumber = (n: number, r: number) =>
+    Number(permutationsBigint(BigInt(n), BigInt(r)));
 
 export const createNumberCipher = (options?: EnCodeDecodeNumberOptions) => {
     if (options === undefined) {
@@ -87,18 +99,18 @@ const createCipherNumberToCharString = ({
         },
     };
 };
-const factorial = (n: bigint): bigint => {
-    let result = 1n;
-    for (let i = 1n; i <= n; i++) {
-        result *= i;
-    }
-    return result;
-};
+// const factorial = (n: bigint): bigint => {
+//     let result = 1n;
+//     for (let i = 1n; i <= n; i++) {
+//         result *= i;
+//     }
+//     return result;
+// };
 
-const permutationsBigint = (n: bigint, r: bigint) =>
-    factorial(n) / factorial(n - r);
-const permutationsNumber = (n: number, r: number) =>
-    Number(permutationsBigint(BigInt(n), BigInt(r)));
+// const permutationsBigint = (n: bigint, r: bigint) =>
+//     factorial(n) / factorial(n - r);
+// const permutationsNumber = (n: number, r: number) =>
+//     Number(permutationsBigint(BigInt(n), BigInt(r)));
 
 const createCipherNumberToWord = ({
     characters,

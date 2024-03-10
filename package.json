@@ -1,9 +1,8 @@
 {
-  "name": "numberman",
+  "name": "CipherNum",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/global/index.js",
-  "type": "module",
   "scripts": {
     "test": "jest",
     "dev": "sh dev.sh",

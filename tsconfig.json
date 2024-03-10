@@ -3,7 +3,9 @@
   "compilerOptions": {
     "moduleResolution": "NodeNext",
     "module": "NodeNext",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "rootDir": "./",
+    "declarationDir": "./",
     // "declarationDir": "./dist/node",
     // "outDir":"./dist/node",
     // "module": "CommonJS"

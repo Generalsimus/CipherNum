@@ -1,14 +1,15 @@
-import { createBigintCipher } from "./bigint";
 import { createNumberCipher } from "./number";
 
-const cipher = createBigintCipher();
+const cipher = createNumberCipher({
+    characters: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+    wordLength: 5,
+});
 
-const testNumber = 8234346565437n
+const testNumber = 523827512
 
 const encodedAsString = cipher.encode(testNumber);
-// encodedAsString = "ݽ䑇谇" 
-
+// encodedAsString = "PZqz0"
 const decodedAsNumber = cipher.decode(encodedAsString);
-// decodedAsNumber = 8234346565437n
+// decodedAsNumber = 523827512
 
-console.log({ decodedAsNumber, encodedAsString })
+console.log({ encodedAsString, decodedAsNumber, ssL: encodedAsString.length });
