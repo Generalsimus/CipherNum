@@ -1,21 +1,40 @@
 {
-  "name": "CipherNum",
+  "name": "ciphernum",
   "version": "1.0.0",
-  "description": "",
+  "description": "This example demonstrates how to use the number encryption functionality provided by CipherNum APP",
   "main": "./dist/global/index.js",
+  "author": "soso tsertsvadze",
+  "license": "MIT",
   "scripts": {
     "test": "jest",
     "dev": "sh dev.sh",
     "build": "tsc --project tsconfig.node.json && tsc --project tsconfig.global.json "
   },
-  "author": "soso tsertsvadze",
-  "license": "MIT",
+  "publishConfig": {
+    "tag": "0.1.0",
+    "dist-tag": "0.1.0",
+    "registry":"https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Generalsimus/CipherNum.git"
+  },
   "exports": {
     ".": {
       "import": "./dist/global/index.js",
       "require": "./dist/common/index.js"
     }
   },
+  "keywords": [
+    "referral",
+    "cipher",
+    "num",
+    "number",
+    "number",
+    "string",
+    "cipher"
+
+  ],
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "jest": "^29.7.0",

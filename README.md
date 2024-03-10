@@ -1,13 +1,9 @@
 ### CipherNum
 
 ## Usage
+The CipherNum npm package offers a unique solution for converting numbers into a string of characters and accurately recovering the original numbers from these character strings. This conversion process works seamlessly with both standard numbers and BigInts, compact data representation, or any scenario where numbers need to be converted to a non-standard string format for storage, transmission, or processing, and then precisely recovered.
 
 ### Number Encryption
-
-#### Example 1
-
-This example demonstrates how to use the number encryption functionality provided by DbView APP. It imports the `createNumberCipher` function from the `number` module and creates a cipher with specified characters and word length. Then, it encodes a test number and decodes the encoded string back to the original number.
-
 
 #### Number
 
