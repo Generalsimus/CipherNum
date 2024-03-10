@@ -1,4 +1,4 @@
-import { createBigintPermutations, createNumberPermutations } from "./utils";
+import { createBigintPermutations } from "./utils";
 
 interface Options {
     characters?: string;
@@ -89,18 +89,6 @@ const createCipherBigintToCharString = ({
         },
     };
 };
-// const factorial = (n: bigint): bigint => {
-//     let result = 1n;
-//     for (let i = 1n; i <= n; i++) {
-//         result *= i;
-//     }
-//     return result;
-// };
-
-// const permutationsBigint = (n: bigint, r: bigint) =>
-//     factorial(n) / factorial(n - r);
-// const permutationsNumber = (n: number, r: number) =>
-//     Number(permutationsBigint(BigInt(n), BigInt(r)));
 
 const createCipherBigintToWord = ({
     characters,
