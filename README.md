@@ -26,7 +26,7 @@ The CipherNum npm package offers a unique solution for converting numbers into a
 
 
 ```ts
-import { createNumberCipher } from "./number";
+import { createNumberCipher } from "ciphernum";
 
 const cipher = createNumberCipher({
     characters: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
@@ -43,7 +43,7 @@ const decodedAsNumber = cipher.decode(encodedAsString);
 
 
 ```ts
-import { createNumberCipher } from "./number";
+import { createNumberCipher } from "ciphernum";
 
 const cipher = createNumberCipher({
     wordLength: 5,
@@ -59,7 +59,7 @@ const decodedAsNumber = cipher.decode(encodedAsString);
 ```
 
 ```ts
-import { createNumberCipher } from "./number";
+import { createNumberCipher } from "ciphernum";
 
 const cipher = createNumberCipher();
 
@@ -74,7 +74,7 @@ const decodedAsNumber = cipher.decode(encodedAsString);
 
 #### Bigint
 ```ts
-import { createBigintCipher } from "./bigint";
+import { createBigintCipher } from "ciphernum";
 
 const cipher = createBigintCipher({
   characters: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
@@ -90,7 +90,7 @@ const decodedAsNumber = cipher.decode(encodedAsString);
 ```
 
 ```ts
-import { createBigintCipher } from "./bigint";
+import { createBigintCipher } from "ciphernum";
 
 const cipher = createBigintCipher({
   wordLength: 5n,
@@ -106,7 +106,7 @@ const decodedAsNumber = cipher.decode(encodedAsString);
 ```
 
 ```ts
-import { createBigintCipher } from "./bigint";
+import { createBigintCipher } from "ciphernum";
 
 const cipher = createBigintCipher()
 

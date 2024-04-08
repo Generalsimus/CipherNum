@@ -1,6 +1,6 @@
 {
   "name": "ciphernum",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This example demonstrates how to use the number encryption functionality provided by CipherNum APP",
   "main": "./dist/global/index.js",
   "author": "soso tsertsvadze",
@@ -11,8 +11,8 @@
     "build": "tsc --project tsconfig.node.json && tsc --project tsconfig.global.json "
   },
   "publishConfig": {
-    "tag": "1.0.2",
-    "dist-tag": "1.0.2",
+    "tag": "1.0.3",
+    "dist-tag": "1.0.3",
     "registry":"https://registry.npmjs.org/"
   },
   "repository": {
