@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "dev": "tsc -w --project tsconfig.common.json & tsc -w --project tsconfig.global.json & wait",
+    "dev": "tsc -w --project tsconfig.common.json & tsc -w --project tsconfig.global.json & node --watch --watch-preserve-output ./dist/common/index.js & wait",
     "build": "tsc --project tsconfig.node.json && tsc --project tsconfig.global.json "
   },
   "publishConfig": {
